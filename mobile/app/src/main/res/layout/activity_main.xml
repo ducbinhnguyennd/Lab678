@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ed_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <EditText
+        android:id="@+id/ed_usname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="passwd"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <EditText
+        android:id="@+id/ed_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="fullname"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <Button
+           android:id="@+id/btn_ds"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Danhsach" />
+
+       <Button
+           android:id="@+id/btn_add"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Select" />
+
+       <Button
+           android:id="@+id/btn_edit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Update" />
+
+       <Button
+           android:id="@+id/btn_del"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Delete" />
+   </LinearLayout>
+
+    <ListView
+        android:id="@+id/lview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="52dp" />
+
+</LinearLayout>
